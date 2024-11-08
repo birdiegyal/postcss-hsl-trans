@@ -1,3 +1,4 @@
+# postcss-hsl-trans
 [PostCSS](https://github.com/postcss/postcss) plugin to convert hex colors to hsl.
 
 ```css

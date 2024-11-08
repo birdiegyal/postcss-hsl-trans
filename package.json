@@ -1,5 +1,5 @@
 {
-  "name": "postcss-hsl-trans",
+  "name": "@birdiegyal/postcss-hsl-trans",
   "version": "1.0.0",
   "description": "A forked PostCSS plugin to transform hex colors to hsl",
   "keywords": [
@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/birdiegyal/postcss-hsl-trans.git"
+    "url": "git+https://github.com/birdiegyal/postcss-hsl-trans.git"
   },
   "bugs": {
     "url": "https://github.com/birdiegyal/postcss-hsl-trans/issues"
@@ -28,5 +28,9 @@
   },
   "scripts": {
     "test": "tape test"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
   }
 }
