@@ -1,26 +1,24 @@
 {
-  "name": "postcss-rgb-plz",
+  "name": "postcss-hsl-trans",
   "version": "2.0.2",
-  "description": "PostCSS plugin to convert hex colors to rgb",
+  "description": "A forked PostCSS plugin to transform hex colors to hsl",
   "keywords": [
     "postcss",
     "css",
     "postcss-plugin",
     "color",
-    "rgb",
-    "hex",
     "postprocessor"
   ],
-  "author": "Dave Lunny",
+  "author": "birdie gyal",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/himynameisdave/postcss-rgb-plz.git"
+    "url": "https://github.com/birdiegyal/postcss-hsl-trans.git"
   },
   "bugs": {
-    "url": "https://github.com/himynameisdave/postcss-rgb-plz/issues"
+    "url": "https://github.com/birdiegyal/postcss-hsl-trans/issues"
   },
-  "homepage": "https://github.com/himynameisdave/postcss-rgb-plz",
+  "homepage": "https://github.com/birdiegyal/postcss-hsl-trans",
   "dependencies": {
     "color": "^0.10.1",
     "postcss": "^5.0.0"
