@@ -1,6 +1,6 @@
 {
   "name": "postcss-hsl-trans",
-  "version": "2.0.2",
+  "version": "1.0.0",
   "description": "A forked PostCSS plugin to transform hex colors to hsl",
   "keywords": [
     "postcss",
