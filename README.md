@@ -1,38 +1,47 @@
-# postcss-rgb-plz [![npm version](https://badge.fury.io/js/postcss-rgb-plz.svg)](http://badge.fury.io/js/postcss-rgb-plz)
-
-
-[PostCSS](https://github.com/postcss/postcss) plugin to convert hex colors to rgb.
+[PostCSS](https://github.com/postcss/postcss) plugin to convert hex colors to hsl.
 
 ```css
-.foo {
-  color: #333;
-  box-shadow: 2px 2px 4px #f1f1f1;
+/* input: global.css */
+:root {
+  --background: #fbfbf2;
+    --foreground: #080708;
 }
 ```
 
 ```css
-.foo {
-  color: rgb( 51, 51, 51 );
-  box-shadow: 2px 2px 4px rgb( 241, 241, 241 );
+/* output: global_built.css */
+:root {
+  --background: 60 53% 97%;
+  --foreground: 300 7% 3%;
 }
 ```
 
 ## Install
 
-```
-npm i --save-dev postcss-rgb-plz
+```bash
+npm i -D postcss-hsl-trans
 ```
 
 ## Usage
 
 ```js
-postcss([ require('postcss-rgb-plz') ])
+// postcss.config.js
+
+export default {
+    plugins: {
+        /* always add new plugins on the top as mentioned in the tw docs. */
+        "postcss-hsl-trans": {},
+        tailwindcss: {},
+        autoprefixer: {}
+    }
+}
+
 ```
 
 See [PostCSS](https://github.com/postcss/postcss) docs for examples for your environment.
 
-### Reasoning
+## Reasoning
 
-Part of the CSS styleguide at my work is to always use rgb values for color, and sometimes I like to use hexes/my preprocessor will convert to hexes. This solves that issue.
+This plugin allows you to use HEX colors all over your css file and upon build, transforms your HEX values to HSL for better compatibility with shadcn/ui. You can preview your colors too when using HEX values all over your stylesheet.
 
 

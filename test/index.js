@@ -21,16 +21,6 @@ var fs       = require('fs'),
 
     };
 
-    // test( "basic", function(t){
-    //   compareFixtures(t, "rgb-plz", "should transform hexes to rgb");
-    //   t.end();
-    // });
-
-    // test( "font-face", function(t){
-    //   compareFixtures(t, "font-face", "should not alter the hash value in the url at all")
-    //   t.end();
-    // });
-
     test( "background", function(t){
       compareFixtures(t, "background", "should handle multiple backgrounds (urls and hexes) properly");
       t.end();
