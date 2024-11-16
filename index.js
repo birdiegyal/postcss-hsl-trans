@@ -1,7 +1,7 @@
 var postcss = require("postcss"),
   color = require("color");
 
-module.exports = postcss.plugin("postcss-rgb-plz", function (opts) {
+module.exports = postcss.plugin("postcss-hsl-trans", function (opts) {
   var isValidHex = function (hex) {
     // if it's not 3 or 6 digits, drop it.
     if (hex.length - 1 !== 3 && hex.length - 1 !== 6) return false;
